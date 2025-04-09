@@ -1,0 +1,148 @@
+/* Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Caveat', cursive;
+  background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%);
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 4px dashed #90caf9;
+  border-radius: 20px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Title & Description */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.app-description {
+  font-size: 1.3rem;
+  color: #5a5a5a;
+  margin-bottom: 30px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: none;
+  background: #64b5f6;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #aaa;
+  transition: background 0.3s;
+  color: white;
+}
+
+.tab.active {
+  background: #2196f3;
+}
+
+.tab:hover {
+  background: #90caf9;
+}
+
+/* Input Group */
+.input-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#manual-input,
+#ai-prompt {
+  padding: 10px;
+  width: 60%;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #e3f2fd;
+  font-family: inherit;
+}
+
+.btn-add,
+.btn-generate {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background: #42a5f5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-add:hover,
+.btn-generate:hover {
+  background: #1e88e5;
+}
+
+/* Task List */
+.task-list-container {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.task-list h2 {
+  margin-bottom: 10px;
+}
+
+/* Sticky Note Task Cards */
+.task-item {
+  background: #bbdefb;
+  padding: 15px 20px;
+  margin: 10px 0;
+  border-radius: 12px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.task-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-text {
+  margin-left: 10px;
+  flex-grow: 1;
+}
+
+.task-actions button {
+  background: transparent;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.task-checkbox {
+  transform: scale(1.5);
+}
+
+/* Hide/show tab content */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
